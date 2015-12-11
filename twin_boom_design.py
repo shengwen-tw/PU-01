@@ -28,6 +28,13 @@ v_tail_span = v_tail_area / v_tail_chord
 
 ###################################################################
 
+#For rectangle wing only!
+spar1_position = wing_span * 0.25
+spar2_position = wing_span * 0.75
+length_between_spar = wing_span * 0.5
+
+###################################################################
+
 print "__________________________________________________"
 
 print "wing span = " + str(wing_span)
@@ -46,6 +53,12 @@ print "__________________________________________________"
 print "Vertical tail area: " + str(v_tail_area) + "m^2 <--- Twin fin"
 print "Vertical tail span: " + str(v_tail_span * 100) + "cm"
 print "Vertical tail chord: " + str(v_tail_chord * 100) + "cm"
+
+print "__________________________________________________"
+
+print "Spar1 position = " + str(spar1_position)
+print "Spar2 position = " + str(spar2_position)
+print "Length between spars = " + str(length_between_spar)
 
 print "__________________________________________________"
 
