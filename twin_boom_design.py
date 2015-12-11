@@ -5,6 +5,12 @@ wing_chord = 0.15
 wing_area = wing_span *  wing_chord
 wing_AR = (wing_span ** 2) / wing_area
 
+wing_CL = 0.304
+cruise_speed = 16.77
+air_density = 1.225
+
+takeoff_weight = (0.5 * wing_CL * air_density * (cruise_speed ** 2.0) * wing_area) / 9.8
+
 ###################################################################
 
 TVCh = 0.6
@@ -41,6 +47,13 @@ print "wing span = " + str(wing_span)
 print "wing chord = " + str(wing_chord)
 print "wing area = " + str(wing_area)
 print "wing Aspect ratio= " + str(wing_AR)
+
+print "__________________________________________________"
+
+print "CL(0) = " + str(wing_CL) + " <--- 3D"
+print "Cruise speed = " + str(cruise_speed) + "m/s"
+print "air density = " + str(air_density)
+print "Takeoff weight = " + str(takeoff_weight)
 
 print "__________________________________________________"
 
