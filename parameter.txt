@@ -1,0 +1,31 @@
+__________________________________________________
+wing span = 1.13
+wing chord = 0.15
+wing area = 0.1695
+wing Aspect ratio= 7.53333333333
+__________________________________________________
+Wing control surface chord = 3.0cm
+Wing control surface left edge = 16.95cm
+Wing control surface right edge = 33.9cm
+__________________________________________________
+CL(0) = 0.617 <--- 3D
+Cruise speed = 16.77m/s
+air density = 1.225
+Takeoff weight = 1.83823490821
+__________________________________________________
+Static margin = 0.1
+Length from C.G to wing A.C = 1.5cm
+__________________________________________________
+Horizontal tail area: 0.0381375m^2
+Horizontal tail span: 39.0576496989cm
+Horizontal tail chord: 9.76441242472cm
+__________________________________________________
+Vertical tail area: 0.0119709375m^2 <--- Twin fin
+Vertical tail span: 12.2597622666cm
+Vertical tail chord: 9.76441242472cm
+Vertical tail AR: 1.25555555556
+__________________________________________________
+Spar1 position = 0.2825
+Spar2 position = 0.8475
+Length between spars = 0.565
+__________________________________________________
