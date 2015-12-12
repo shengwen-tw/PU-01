@@ -27,13 +27,13 @@ h_tail_chord = h_tail_area / h_tail_span
 
 TVCv = 0.05
 Lv = 0.4
-v_tail_AR = 2
 v_tail_area = TVCv * wing_area * wing_span / Lv
 v_tail_area = v_tail_area / 2
 #v_tail_span = (v_tail_area * v_tail_AR) ** 0.5
 #v_tail_chord = v_tail_area / h_tail_span
 v_tail_chord = h_tail_chord
 v_tail_span = v_tail_area / v_tail_chord
+v_tail_AR = (v_tail_span ** 2) / v_tail_area
 
 ###################################################################
 
@@ -74,6 +74,7 @@ print "__________________________________________________"
 print "Vertical tail area: " + str(v_tail_area) + "m^2 <--- Twin fin"
 print "Vertical tail span: " + str(v_tail_span * 100) + "cm"
 print "Vertical tail chord: " + str(v_tail_chord * 100) + "cm"
+print "Vertical tail AR: " + str(v_tail_AR)
 
 print "__________________________________________________"
 
