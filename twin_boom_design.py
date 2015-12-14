@@ -17,7 +17,7 @@ cg_to_ac_length = wing_chord * static_margin
 ###################################################################
 
 TVCh = 0.6
-Lh = 0.4
+Lh = 0.30
 h_tail_AR = 4
 h_tail_area = (TVCh * wing_area * wing_chord / Lh) * 1.1
 h_tail_span = (h_tail_area * h_tail_AR) ** 0.5
@@ -26,7 +26,7 @@ h_tail_chord = h_tail_area / h_tail_span
 ###################################################################
 
 TVCv = 0.05
-Lv = 0.4
+Lv = 0.30
 v_tail_area = (TVCv * wing_area * wing_span / Lv) * 1.1
 v_tail_area = v_tail_area / 2
 #v_tail_span = (v_tail_area * v_tail_AR) ** 0.5
@@ -34,10 +34,6 @@ v_tail_area = v_tail_area / 2
 v_tail_chord = h_tail_chord
 v_tail_span = v_tail_area / v_tail_chord
 v_tail_AR = (v_tail_span ** 2) / v_tail_area
-
-###################################################################
-
-C = h_tail_area / (wing_area + h_tail_area)
 
 ###################################################################
 
@@ -87,5 +83,3 @@ print "Spar2 position = " + str(spar2_position)
 print "Length between spars = " + str(length_between_spar)
 
 print "__________________________________________________"
-
-print "C :" + str(C)
