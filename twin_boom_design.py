@@ -25,6 +25,13 @@ h_tail_chord = h_tail_area / h_tail_span
 
 ###################################################################
 
+CL_max = 1.25
+takeoff_weight = 1.2
+stall_speed = (2 * takeoff_weight * 9.81 * air_density * wing_area * CL_max) ** 0.5
+
+###################################################################
+
+
 TVCv = 0.05
 Lv = 0.30
 v_tail_area = (TVCv * wing_area * wing_span / Lv) * 1.1
@@ -57,6 +64,7 @@ print "CL(0) = " + str(wing_CL) + " <--- 3D"
 print "Cruise speed = " + str(cruise_speed) + "m/s"
 print "air density = " + str(air_density)
 print "Takeoff weight = " + str(takeoff_weight)
+print "Stall speed = " + str(stall_speed)
 
 print "__________________________________________________"
 
