@@ -5,8 +5,8 @@ wing_chord = 0.15
 wing_area = wing_span *  wing_chord
 wing_AR = (wing_span ** 2) / wing_area
 
-wing_CL = 0.617
-cruise_speed = 16.77
+wing_CL = 0.606
+cruise_speed = 14.235#16.77
 air_density = 1.225
 
 takeoff_weight = (0.5 * wing_CL * air_density * (cruise_speed ** 2.0) * wing_area) / 9.8
