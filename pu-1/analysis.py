@@ -1,7 +1,7 @@
 ###################################################################
 
 wing_span = 1.13
-wing_chord = 0.15
+wing_chord = 0.145
 wing_area = wing_span *  wing_chord
 wing_AR = (wing_span ** 2) / wing_area
 
@@ -35,7 +35,7 @@ stall_speed = (2 * takeoff_weight * 9.81 * air_density * wing_area * CL_max) ** 
 TVCv = 0.05
 Lv = 0.30
 v_tail_area = (TVCv * wing_area * wing_span / Lv) * 1.1
-v_tail_area = v_tail_area / 2
+v_tail_area = v_tail_area
 #v_tail_span = (v_tail_area * v_tail_AR) ** 0.5
 #v_tail_chord = v_tail_area / h_tail_span
 v_tail_chord = h_tail_chord
