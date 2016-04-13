@@ -1,1 +1,3 @@
 V_{stall} = \sqrt{2wg\over \rho \ S \ Cl_{max}}
+
+L = Cl \ {\rho v^2 \over 2} A
