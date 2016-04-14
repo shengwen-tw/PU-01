@@ -21,11 +21,11 @@ cg_to_ac_length = wing_chord * static_margin
 ###################################################################
 
 TVCh = 0.6
-Lh = 0.30
 h_tail_span = 0.55
 h_tail_chord = 0.11
-h_tail_area = (TVCh * wing_area * wing_chord / Lh) * 1.1
+h_tail_area = h_tail_span * h_tail_chord
 h_tail_AR = (h_tail_span * h_tail_span) / h_tail_area
+Lh = (TVCh * wing_area * wing_chord) / h_tail_area
 
 ###################################################################
 
@@ -36,13 +36,11 @@ stall_speed = (2 * takeoff_weight * 9.81 * air_density * wing_area * CL_max) ** 
 ###################################################################
 
 TVCv = 0.05
-Lv = 0.30
-v_tail_area = (TVCv * wing_area * wing_span / Lv) * 1.1
-#v_tail_span = (v_tail_area * v_tail_AR) ** 0.5
-#v_tail_chord = v_tail_area / h_tail_span
-v_tail_chord = h_tail_chord
-v_tail_span = v_tail_area / v_tail_chord
+v_tail_chord = 0.11
+v_tail_span = 0.15
+v_tail_area = v_tail_span * v_tail_chord
 v_tail_AR = (v_tail_span ** 2) / v_tail_area
+Lv = (TVCv * wing_area * wing_span) / v_tail_area
 
 ###################################################################
 
@@ -79,6 +77,7 @@ print "Horizontal tail area: " + str(h_tail_area) + "m^2"
 print "Horizontal tail span: " + str(h_tail_span * 100) + "cm"
 print "Horizontal tail chord: " + str(h_tail_chord * 100) + "cm"
 print "Horizontal tail AR: " + str(h_tail_AR)
+print "Lh: " + str(Lh)
 
 print "__________________________________________________"
 
@@ -86,5 +85,6 @@ print "Vertical tail area: " + str(v_tail_area) + "m^2"
 print "Vertical tail span: " + str(v_tail_span * 100) + "cm"
 print "Vertical tail chord: " + str(v_tail_chord * 100) + "cm"
 print "Vertical tail AR: " + str(v_tail_AR)
+print "Lv: " + str(Lv)
 
 print "__________________________________________________"
