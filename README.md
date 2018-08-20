@@ -4,6 +4,8 @@
 
 It is a twin boom fixed wing aircraft with a pusher setup and can be controlled manually by human on ground.
 
+<img src="https://github.com/shengwen1997/PU-01/blob/master/materials/pu-01.jpg?raw=true" width="75%" height="75%"></a>
+
 ## Specification
 
 | Parameter | |
