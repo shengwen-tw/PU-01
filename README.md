@@ -12,9 +12,9 @@ It is a twin boom fixed wing aircraft with a pusher setup and can be controlled 
 |:-------------------|:---------|
 | Cruise speed       | 52km/hr  |
 | Max take-of weight | 1.2kg    |
-| Main wing airfoil  | Clark-Y  |
-| Main wing span     | 1.13m    |
-| Tail wing airfoil  | NACA0015 |
+| Wing airfoil  | Clark-Y  |
+| Wing span     | 1.13m    |
+| Tail airfoil  | NACA0015 |
 | Motor              | 1400kv   |
 | Propeller          | 8060     |
 
